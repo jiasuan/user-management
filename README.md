@@ -4,15 +4,15 @@ This project is a Single Page Application developed using Next.js.
 ## Table of Contents
 
 <details><summary>Click to expand</summary></details>
-- [Getting Started](#getting-started)
-- [Features](#features)
-- [Libraries](#libraries)
-- [Components](#components)
-- [Styling](#styling)
+- [Getting Started](#-getting-started)
+- [Features](#-features)
+- [Libraries](#-libraries)
+- [Components](#-components)
+- [Styling](#-styling)
 
 
 
-## Getting Started
+## 🚀 Getting Started
 1. Clone this repository or download the ZIP file
 ```sh
 git clone https://github.com/jiasuan/user-management.git
