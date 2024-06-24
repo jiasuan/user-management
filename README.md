@@ -1,36 +1,57 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## User Management Tool
+
+This project is a Single Page Application developed using Next.js.
+
+## Table of Contents
+
+<details><summary>Click to expand</summary></details>
+- [Getting Started](getting-started)
+- [Features](features)
+- [Libraries](libraries)
+- [Components](components)
+- [Styling](styling)
+
+
+
 ## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone this repository or download the ZIP file
+```sh
+git clone https://github.com/jiasuan/user-management.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Make sure that you have Node.js and NPM, or Yarn installed
+3. Install the project dependencies from the package.json file:
+```sh
+npm install
+# or
+yarn
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Build the application by running this following command:
+```sh
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Launch the application local development on `localhost:3000` by running this following command:
+```sh
+npm run start
+```
 
-## Learn More
+## Features
+- **User Management**: User allow to create, view, modify, delete user.
+- **Internalization**: User allows to change between English and Chinese language
 
-To learn more about Next.js, take a look at the following resources:
+## Libraries
+This project utilized libraries below to provide better ???
+- **formik**: ???
+- **yup**:
+- **react-query**: ???
+- **axios**: ???
+- **redux**: ???
+- **Tailwind CSS**: ???
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Styling
