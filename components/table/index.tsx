@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 
 //interfaces
-import { TableComponentProps } from "@/interfaces";
+import { TableComponentProps, ID } from "@/interfaces";
 
 //components
 import TableRowComponent from './tableRow';
 
-export default function TableComponent<T>(props: TableComponentProps<T>) {
+export default function TableComponent<T extends ID>(props: TableComponentProps<T>) {
 
     const { data, header, editAction, deleteAction } = props;
   

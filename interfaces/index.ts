@@ -1,5 +1,8 @@
 import { ReactNode } from 'react';
-import { string } from 'yup';
+
+export interface ID {
+    id: string | number;
+}
 
 /////////form
 export interface FormData {
@@ -9,7 +12,7 @@ export interface FormData {
 //form - user
 export type UserKey = keyof User;
 
-export type User = {
+export interface User extends ID {
     id: string;
     name: string;
     email: string;
@@ -46,8 +49,8 @@ export interface InputComponentProps {
     inputLabel: string;
     errorMessage?: string;
     placeholder?: string;
-    required: Boolean;
-    touched?: Boolean;
+    required: boolean;
+    touched?: boolean;
 }
 
 //button - default component
@@ -115,7 +118,7 @@ export interface AppBarProps{
 
 
 //table
-export interface TableComponentProps<T> {
+export interface TableComponentProps<T extends ID> {
     data: T[],
     header: TableColumn<T>[],
     editAction?: (args: any) => void;
@@ -128,7 +131,7 @@ export interface TableColumn<T> {
     sort: boolean;
 }
 
-export interface TableRowProps<T> {
+export interface TableRowProps<T extends ID> {
     header: TableColumn<T>[];
     item: T;
     editAction?: (args: any) => void;

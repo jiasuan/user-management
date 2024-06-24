@@ -1,11 +1,11 @@
 //interfaces
-import { TableRowProps } from "@/interfaces";
+import { TableRowProps, ID } from "@/interfaces";
 
 //components
 import { DeleteIcon, EditIcon } from "@/components/icons";  
 
 
-export default function TableRowComponent<T>(props: TableRowProps<T>) {
+export default function TableRowComponent<T extends ID>(props: TableRowProps<T>) {
   
     const { header, item, editAction, deleteAction } = props;
   
@@ -15,7 +15,7 @@ export default function TableRowComponent<T>(props: TableRowProps<T>) {
         header.map((headerItem)=>{
   
           const rowKey = headerItem.key
-          const rowLabel = item[rowKey]
+          const rowLabel = String(item[rowKey])
   
           return(
             <td className="px-6 py-2.5">{rowLabel}</td>
