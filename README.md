@@ -1,17 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## User Management Tool
-
 This project is a Single Page Application developed using Next.js.
 
 ## Table of Contents
 
 <details><summary>Click to expand</summary></details>
-- [Getting Started](getting-started)
-- [Features](features)
-- [Libraries](libraries)
-- [Components](components)
-- [Styling](styling)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Libraries](#libraries)
+- [Components](#components)
+- [Styling](#styling)
 
 
 
@@ -21,13 +18,13 @@ This project is a Single Page Application developed using Next.js.
 git clone https://github.com/jiasuan/user-management.git
 ```
 
-2. Make sure that you have Node.js and NPM, or Yarn installed
-3. Install the project dependencies from the package.json file:
+2. Install the project dependencies from the package.json file:
 ```sh
 npm install
 # or
 yarn
 ```
+
 
 1. Build the application by running this following command:
 ```sh
@@ -45,12 +42,12 @@ npm run start
 
 ## Libraries
 This project utilized libraries below to provide better ???
-- **formik**: ???
-- **yup**:
-- **react-query**: ???
-- **axios**: ???
-- **redux**: ???
-- **Tailwind CSS**: ???
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **redux**: State Management libraryt for managing application state
+- **react-query**: Data fetching and caching linraru for managing API data state. Integrate with axios.
+- **axios**: HTTP vlient for making API request
+- **formik**: Form library for handling forms.
+- **yup**: Schema validation library used with formik for form validation.
 
 ## Components
 
