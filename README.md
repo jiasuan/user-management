@@ -3,12 +3,16 @@ This project is a Single Page Application developed using Next.js.
 
 ## Table of Contents
 
-<details><summary>Click to expand</summary></details>
-- [Getting Started](#-getting-started)
-- [Features](#-features)
-- [Libraries](#-libraries)
-- [Components](#-components)
-- [Styling](#-styling)
+<details><summary>Click to expand</summary>
+
+- [🚀Getting Started](#getting-started)
+- [Features](#features)
+- [Libraries](#libraries)
+- [Components](#components)
+- [Styling](#styling)
+
+</details>
+
 
 
 
