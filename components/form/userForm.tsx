@@ -43,17 +43,17 @@ export default function UserForm(props: UserFormProps){
          >
             {({ errors, touched }) => (
               <Form id="user-form">
-                 <div className="grid gap-6 mb-6 grid-cols-12">
-                    <div className="col-span-12 sm:col-span-12 md:col-span-6">
+                 <div className="grid md:gap-6 mb-6 grid-cols-12">
+                    <div className="col-span-12 sm:col-span-12 sm:pb-4 md:col-span-6">
                       <InputComponent inputID="name" inputLabel="Name" placeholder="Name" required={true} errorMessage={errors.name} touched={touched.name}/>
                     </div>
-                    <div className="col-span-12 sm:col-span-12 md:col-span-6">
+                    <div className="col-span-12 sm:col-span-12 sm:pb-4 md:col-span-6">
                       <InputComponent inputID="username" inputLabel="Username" placeholder="Username" required={true} errorMessage={errors.username} touched={touched.username}/>
                     </div>
-                    <div className="col-span-12 sm:col-span-12 md:col-span-6">
+                    <div className="col-span-12 sm:col-span-12 sm:pb-4 md:col-span-6">
                       <InputComponent inputID="email" inputLabel="Email Address" placeholder="Email" required={true} errorMessage={errors.email} touched={touched.email}/>
                     </div>
-                    <div className="col-span-12 sm:col-span-12 md:col-span-6">
+                    <div className="col-span-12 sm:col-span-12 sm:pb-4 md:col-span-6">
                       <InputComponent inputID="phone" inputLabel="Phone No." placeholder="Phone" required={false} errorMessage={errors.phone} touched={touched.phone}/>
                     </div>
                  </div>

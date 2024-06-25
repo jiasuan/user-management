@@ -9,7 +9,7 @@ export default function BaseModalComponent(props: BaseModalComponentProps){
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <div className="relative p-4 w-full max-w-md max-h-full">
-                <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div className="relative bg-white rounded-lg shadow">
                     <div className="p-4 md:p-5 text-center">
                         {icon}
                         <h3 className="text-2xl font-semibold text-gray-900 pb-2" id="modal-title">{title}</h3>

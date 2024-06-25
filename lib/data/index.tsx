@@ -17,7 +17,7 @@ const createUserFn = (values: UserFormInitValue): Promise<UserFormInitValue> => 
                                                                                       console.error("Error adding new user:", error);
                                                                                       throw new Error('Network Error');
                                                                                     });
-const editUserFn = (obj: EditFormValue): Promise<EditFormValue> => axios.post(`${process.env.SERVER_ENDPOINT}/users/${obj.id}`, obj.values)
+const editUserFn = (obj: EditFormValue): Promise<EditFormValue> => axios.put(`${process.env.SERVER_ENDPOINT}/users/${obj.id}`, obj.values)
                                                                                     .then((response) => {
                                                                                       console.log("Success Edit User");
                                                                                       return response.data;

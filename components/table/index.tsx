@@ -12,7 +12,7 @@ export default function TableComponent<T extends ID>(props: TableComponentProps<
   
     return(
         <table className="w-full text-left text-gray-500 rounded-lg">
-            <thead className="text-xs text-gray-700 uppercase bg-blue-50">
+            <thead className="text-xs text-gray-700 uppercase bg-red-50">
                 <tr>
                     {
                       header.map((item=>{

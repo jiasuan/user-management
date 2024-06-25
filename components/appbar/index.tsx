@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation'
 import { AppBarProps } from '@/interfaces';
-
+import { ArrowLeftIcon } from '../icons';
 
 export default function AppBar(props: AppBarProps){
 
@@ -16,11 +16,18 @@ export default function AppBar(props: AppBarProps){
       const path = backTo || ''
       router.push(path);
     }
+
+    const backIcon = ArrowLeftIcon();
   
     return(
       <div className="flex justify-between py-6 items-center">
         <div className="flex flex-col pb-2">
-            {backTo && <button className="text-sm w-fit" onClick={handleNavi}>Back</button>}
+            {backTo && 
+                <button className="text-sm w-fit flex flex-row pb-2" onClick={handleNavi}>
+                  <span className="pr-2">{backIcon}</span>
+                  Back
+                </button>
+            }
             <p className="text-xl font-extrabold">{title}</p>
         </div>
         <div className="flex space-x-4">

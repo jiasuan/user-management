@@ -8,8 +8,9 @@ This project is a code test from [itemit](https://itemit.com), developed using N
 - [🚀Getting Started](#getting-started)
 - [Features](#features)
 - [Libraries](#libraries)
+- [File Structure](#file-structure)
 - [Components](#components)
-- [Styling](#styling)
+- [Components File Structure](#components-file-structure)
 
 </details>
 
