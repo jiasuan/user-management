@@ -4,10 +4,10 @@
 import { useEffect } from "react";
 
 //components
-import SubmitButton from "@/components/button/submit";
-import UserForm from "@/components/form/userForm";
-import AppBar from "@/components/appbar";
-import ModalComponent from "@/components/modal";
+import SubmitButton from "@/components/molecules/button/submit";
+import UserForm from "@/components/organisms/form/userForm";
+import AppBar from "@/components/molecules/appbar";
+import ModalComponent from "@/components/organisms/modal";
 
 //redux 
 import { useAppSelector, useAppDispatch } from "@/libs/redux/hooks";

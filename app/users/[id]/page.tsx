@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'
 
 //components
-import SubmitButton from "@/components/button/submit";
-import UserForm from "@/components/form/userForm";
-import AppBar from "@/components/appbar";
-import ModalComponent from "@/components/modal";
-import { GeneralErrorLayout } from "@/components/layout/error";
-import { GeneralLoadingLayout } from "@/components/layout/loading";
+import SubmitButton from "@/components/molecules/button/submit";
+import UserForm from "@/components/organisms/form/userForm";
+import AppBar from "@/components/molecules/appbar";
+import ModalComponent from "@/components/organisms/modal";
+import { GeneralErrorLayout } from "@/components/molecules/layout/error";
+import { GeneralLoadingLayout } from "@/components/molecules/layout/loading";
 
 //redux 
 import { useAppSelector, useAppDispatch } from "@/libs/redux/hooks";

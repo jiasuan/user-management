@@ -1,5 +1,6 @@
 ## Code Testing
 This project is a code test from [itemit](https://itemit.com), developed using Next.js by [Louis Tan Jia Suan](https://bit.ly/jiasuan).
+This project features a simple demostration of a User Management module.
 
 ## Table of Contents
 

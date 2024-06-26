@@ -53,18 +53,40 @@ export interface InputComponentProps {
     touched?: boolean;
 }
 
-//button - default component
+//button - primary/ secondary button
 export interface ButtonProps {
-    action?: (args?: any) => void,
+    /**
+     * Button label
+     */
     label: string,
+      /**
+   * Icon on the left side of label
+   */
     leftIcon?: ReactNode,
+      /**
+   * Icon on the right side of label
+   */
     rightIcon?: ReactNode,
+    /**
+     * Background color
+     */
+    backgroundColor?: string
+      /**
+   * Button click handler
+   */
+    action?: (args?: any) => void,
+
 }
 
 //button - submit form
 export interface SubmitButtonProps extends ButtonProps{
     //take Button props
     formID: string,
+}
+
+//button - create
+export interface CreateButtonProps {
+    action: (args?: any) => void
 }
 
 //modal - default component  

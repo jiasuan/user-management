@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { CircleAlertIcon } from '@/components/icons';
+import { CircleAlertIcon } from '@/components/atoms/icons';
 
 export default function ErrorPage({ error,}: {
   error: Error & { digest?: string };

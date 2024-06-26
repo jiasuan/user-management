@@ -13,12 +13,11 @@ import { useAppSelector, useAppDispatch } from "@/libs/redux/hooks";
 import { openModal, changeModalStatus } from "@/lib/redux/features/modal/modalSlice";
 
 //components
-import CreateButton from "@/components/button/create";
-import ModalComponent from "@/components/modal";
-import { AddIcon } from "@/components/icons";
-import TableComponent from "@/components/table";
-import { GeneralErrorLayout } from "@/components/layout/error";
-import { GeneralLoadingLayout } from "@/components/layout/loading";
+import CreateButton from "@/components/molecules/button/create";
+import ModalComponent from "@/components/organisms/modal";
+import TableComponent from "@/components/organisms/table";
+import { GeneralErrorLayout } from "@/components/molecules/layout/error";
+import { GeneralLoadingLayout } from "@/components/molecules/layout/loading";
 
 //constant file
 import { MODAL_TYPE, MODAL_STATUS } from "@/lib/constants";
@@ -80,7 +79,7 @@ function AppBar(){
   return(
     <div className="flex justify-between py-6 items-center">
         <p className="text-xl font-extrabold">User Management</p>
-        <CreateButton action={handleNavi} label={"Create"} leftIcon={<AddIcon/>} />
+        <CreateButton action={handleNavi}/>
     </div>
   )
 }
