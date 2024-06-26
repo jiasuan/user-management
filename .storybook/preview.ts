@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/react";
+import type { Preview, Parameters } from "@storybook/react";
 import "../app/globals.css";
 
 const preview: Preview = {
@@ -10,6 +10,16 @@ const preview: Preview = {
       },
     },
   },
+};
+
+export const parameters: Parameters = {
+  options: {
+    storySort: {
+      method: 'alphabetical',
+      order: ['Atoms','Molecules', 'Organisms'],
+      locales: 'en-US',
+  }
+  }
 };
 
 export default preview;

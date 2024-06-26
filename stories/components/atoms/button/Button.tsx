@@ -1,5 +1,4 @@
-import React, { ReactNode } from 'react';
-import './button.css';
+import React from 'react';
 import ContainedBtn from '@/components/atoms/button/contained';
 import { ButtonProps } from '@/interfaces';
 

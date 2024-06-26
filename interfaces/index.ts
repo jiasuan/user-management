@@ -55,27 +55,13 @@ export interface InputComponentProps {
 
 //button - primary/ secondary button
 export interface ButtonProps {
-    /**
-     * Button label
-     */
     label: string,
-      /**
-   * Icon on the left side of label
-   */
     leftIcon?: ReactNode,
-      /**
-   * Icon on the right side of label
-   */
     rightIcon?: ReactNode,
-    /**
-     * Background color
-     */
     backgroundColor?: string
-      /**
-   * Button click handler
-   */
     action?: (args?: any) => void,
-
+    formID? : string
+    type? : "button" | "submit" | "reset"
 }
 
 //button - submit form
