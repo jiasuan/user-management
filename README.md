@@ -1,6 +1,9 @@
 ## Code Testing
 This project is a code test from [itemit](https://itemit.com), developed using Next.js by [Louis Tan Jia Suan](https://bit.ly/jiasuan).
 This project features a simple demostration of a User Management module.
+<br/>
+<br/>Live Demo: https://jiasuan-code-test.vercel.app/users
+<br/>Storybook Demo: https://user-management-storybook.vercel.app/
 
 ## Table of Contents
 
@@ -86,32 +89,53 @@ This project utilizes the following libraries:
     └── └── schema.ts   #Yup Form Validation Schema
 
 ## Components
-Documentation of components can be found at link.
+Documentation of components can be found at [Storybook](https://user-management-storybook.vercel.app/).
 
 ## Components File Structure
 
-    ├── components
+    components
+    ├── atoms
+    │   ├── button
+    │   │   ├── contained
+    │   │   │   └── index.tsx
+    │   │   └── outlined
+    │   │       └── index.tsx
+    │   ├── icons
+    │   │   └── index.tsx
+    │   └── input
+    │       └── index.tsx
+    ├── molecules
     │   ├── appbar
     │   │   └── index.tsx
     │   ├── button
+    │   │   ├── cancel
+    │   │   │   └── index.tsx
+    │   │   ├── close
+    │   │   │   └── index.tsx
     │   │   ├── create
-    │   │   ├── modalAction
-    │   │   ├── modalCancel
-    │   │   ├── retry
-    │   │   └── submit
-    │   ├── form
-    │   │   └── userForm.tsx
-    │   ├── icons
-    │   ├── input
-    │   ├── layout
-    │   │   ├── error.tsx
-    │   │   └── loading.tsx
-    │   ├── modal
-    │   │   ├── base
-    │   │   ├── create
+    │   │   │   └── index.tsx
     │   │   ├── delete
-    │   │   ├── edit
-    │   │   └── index.tsx
-    │   └── table
-    │       ├── index.tsx
-    └────── └── tableRow.tsx
+    │   │   │   └── index.tsx
+    │   │   ├── retry
+    │   │   │   └── index.tsx
+    │   │   └── submit
+    │   │       └── index.tsx
+    │   └── layout
+    │       ├── error.tsx
+    │       └── loading.tsx
+    └── organisms
+        ├── form
+        │   └── userForm.tsx
+        ├── modal
+        │   ├── base
+        │   │   └── index.tsx
+        │   ├── create
+        │   │   └── index.tsx
+        │   ├── delete
+        │   │   └── index.tsx
+        │   ├── edit
+        │   │   └── index.tsx
+        │   └── index.tsx
+        └── table
+            ├── index.tsx
+            └── tableRow.tsx
