@@ -22,6 +22,25 @@ import { GeneralLoadingLayout } from "@/components/molecules/layout/loading";
 //constant file
 import { MODAL_TYPE, MODAL_STATUS } from "@/lib/constants";
 
+//flow
+/**
+* 1. Request user list from API fetchUserList
+*   1.1 Show loading
+*   1.2 If request failed show Error
+*   1.3 If request success show list of user on table
+* 
+* 2. Show delete user modal when click delete button of particular user on table
+*   2.1 Close modal if click cancel button
+*   2.2 Send DELETE request deleteUser
+*     2.2.1 Show loading
+*     2.2.2 If request failed show error and retry button
+*     2.2.3 If success, show success message with close button
+*     2.2.4 Close modal when click close button
+* 
+* 3. Navigate to Edit User module (path "users/:id") when click particular user on table
+* 4. Navigate to Create User module (path "users/create") when click Create button
+ */
+
 export default function UserModuleLayout() {
     return (
       <div className="p-12">
